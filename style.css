@@ -1,4 +1,4 @@
-    /* =========================================
+/* =========================================
        Global Resets & Theme Transitions
     ========================================= */
     body {
@@ -6,7 +6,7 @@
       margin: 0;
       padding: 0;
       overflow-x: hidden;
-      padding-top: 80px; 
+      padding-top: 110px; /* Increased from 80px */
       background-color: #ffffff;
       color: #333333;
       transition: background-color 0.4s ease, color 0.4s ease; /* Smooth Dark Mode Transition */
@@ -15,7 +15,7 @@
     a { text-decoration: none; }
     a:hover { text-decoration: none; }
 
-    /* =========================================
+  /* =========================================
        Navbar (Header) Styles
     ========================================= */
     #header {
@@ -51,75 +51,163 @@
     /* =========================================
        Hero Section
     ========================================= */
-    #hero { width: 100%; height: calc(100vh - 80px); background-color: #ffffff; transition: background-color 0.4s ease; }
+    #hero { width: 100%; height: calc(100vh - 110px); /* Adjusted for new header height */ background-color: #ffffff; transition: background-color 0.4s ease; }
     .hero-container { display: flex; height: 100%; }
     .hero-left-pane { flex: 0 0 50%; display: flex; align-items: center; justify-content: center; padding: 0 5%; }
-    .text-wrapper { max-width: 650px; width: 100%; }
+    .text-wrapper { max-width: 750px; width: 100%; } /* Increased from 650px */
     .hero-right-pane { flex: 0 0 50%; height: 100%; position: relative; }
-    .hero-heading { font-size: 55px; font-weight: 800; color: #000000; line-height: 1.25; margin-bottom: 25px; transition: color 0.4s ease; }
-    .hero-subtext { font-size: 20px; color: #555555; line-height: 1.8; margin-bottom: 40px; transition: color 0.4s ease; }
-    .hero-buttons { display: flex; gap: 15px; margin-bottom: 50px; }
-    .btn-solid-blue { background-color: #106eea; color: #ffffff; font-size: 13px; font-weight: 700; padding: 12px 35px; text-transform: uppercase; letter-spacing: 1px; border: 1px solid #106eea; border-radius: 3px; transition: 0.3s;}
+    .hero-heading { font-size: 55px; /* Increased from 55px */ font-weight: 800; color: #000000; line-height: 1.25; margin-bottom: 30px; transition: color 0.4s ease; }
+    .hero-subtext { font-size: 20px; /* Increased from 20px */ color: #555555; line-height: 1.8; margin-bottom: 45px; transition: color 0.4s ease; }
+    .hero-buttons { display: flex; gap: 20px; margin-bottom: 60px; }
+    .btn-solid-blue { background-color: #106eea; color: #ffffff; font-size: 16px; /* Increased from 13px */ font-weight: 700; padding: 16px 45px; /* Increased from 12px 35px */ text-transform: uppercase; letter-spacing: 1px; border: 1px solid #106eea; border-radius: 3px; transition: 0.3s;}
     .btn-solid-blue:hover { background-color: #0d58ba; color: #ffffff; }
-    .btn-outline-black { background-color: transparent; color: #000000; font-size: 13px; font-weight: 700; padding: 12px 35px; text-transform: uppercase; letter-spacing: 1px; border: 1px solid #000000; border-radius: 3px; transition: 0.3s;}
+    .btn-outline-black { background-color: transparent; color: #000000; font-size: 16px; /* Increased from 13px */ font-weight: 700; padding: 16px 45px; /* Increased from 12px 35px */ text-transform: uppercase; letter-spacing: 1px; border: 1px solid #000000; border-radius: 3px; transition: 0.3s;}
     .btn-outline-black:hover { background-color: #f8f9fa; color: #000000; }
     .secure-section { display: flex; align-items: center; }
-    .secure-icon { font-size: 24px; color: #106eea; margin-right: 15px; }
-    .secure-text { font-size: 11px; color: #333333; line-height: 1.4; margin: 0; transition: color 0.4s ease; }
+    .secure-icon { font-size: 32px; /* Increased from 24px */ color: #106eea; margin-right: 15px; }
+    .secure-text { font-size: 15px; /* Increased from 11px */ color: #333333; line-height: 1.4; margin: 0; transition: color 0.4s ease; }
 
     /* Carousel */
     .carousel, .carousel-inner, .carousel-item { height: 100%; }
     .slider-img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.8); }
-    .slider-caption { position: absolute; bottom: 80px; width: 100%; text-align: center; z-index: 10; }
-    .slider-caption h5 { font-size: 18px; font-weight: 700; color: #ffffff; letter-spacing: 6px; text-transform: uppercase; margin: 0; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); }
+    .slider-caption { position: absolute; bottom: 100px; width: 100%; text-align: center; z-index: 10; }
+    .slider-caption h5 { font-size: 26px; /* Increased from 18px */ font-weight: 700; color: #ffffff; letter-spacing: 6px; text-transform: uppercase; margin: 0; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); }
     .custom-indicators { bottom: 30px; margin: 0; }
-    .custom-indicators li { width: 35px; height: 3px; background-color: #ffffff; opacity: 0.5; border: none; margin: 0 5px; }
+    .custom-indicators li { width: 45px; height: 5px; background-color: #ffffff; opacity: 0.5; border: none; margin: 0 5px; }
     .custom-indicators .active { opacity: 1; }
 
     /* =========================================
        Why Choose Us Section
     ========================================= */
-    .why-us-section { background-color: #ffffff; padding: 80px 0; transition: background-color 0.4s ease; }
-    .section-header { margin-bottom: 50px; }
-    .section-title { font-size: 36px; font-weight: 700; color: #000000; margin-bottom: 15px; transition: color 0.4s ease; }
+    .why-us-section { background-color: #ffffff; padding: 110px 0; /* Increased from 80px 0 */ transition: background-color 0.4s ease; }
+    .section-header { margin-bottom: 60px; }
+    .section-title { font-size: 48px; /* Increased from 36px */ font-weight: 700; color: #000000; margin-bottom: 20px; transition: color 0.4s ease; }
     .section-title .highlight { color: #106eea; }
-    .section-subtitle { font-size: 16px; color: #555555; font-weight: 400; transition: color 0.4s ease; }
-    .feature-card { background-color: #ffffff; border: 1px solid #eaeaea; border-radius: 8px; padding: 40px 30px; text-align: center; transition: all 0.3s ease; height: 100%; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.02); }
+    .section-subtitle { font-size: 20px; /* Increased from 16px */ color: #555555; font-weight: 400; transition: color 0.4s ease; }
+    .feature-card { background-color: #ffffff; border: 1px solid #eaeaea; border-radius: 8px; padding: 50px 40px; /* Increased from 40px 30px */ text-align: center; transition: all 0.3s ease; height: 100%; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.02); }
     .feature-card:hover { box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08); transform: translateY(-5px); }
-    .feature-card .icon-box { display: inline-flex; align-items: center; justify-content: center; width: 70px; height: 70px; background-color: #f4f7fb; border-radius: 12px; margin-bottom: 25px; transition: background-color 0.4s ease; }
-    .feature-card .icon-box i { font-size: 32px; color: #106eea; }
-    .feature-card .feature-title { font-size: 20px; font-weight: 700; color: #222222; margin-bottom: 15px; transition: color 0.4s ease; }
-    .feature-card .feature-text { font-size: 14.5px; color: #666666; line-height: 1.6; margin: 0; transition: color 0.4s ease; }
+    .feature-card .icon-box { display: inline-flex; align-items: center; justify-content: center; width: 100px; height: 100px; /* Increased from 70px 70px */ background-color: #f4f7fb; border-radius: 12px; margin-bottom: 30px; transition: background-color 0.4s ease; }
+    .feature-card .icon-box i { font-size: 50px; /* Increased from 32px */ color: #106eea; }
+    .feature-card .feature-title { font-size: 28px; /* Increased from 20px */ font-weight: 700; color: #222222; margin-bottom: 20px; transition: color 0.4s ease; }
+    .feature-card .feature-text { font-size: 18px; /* Increased from 14.5px */ color: #666666; line-height: 1.6; margin: 0; transition: color 0.4s ease; }
 
-    /* =========================================
-       Products & Services Grid Section
-    ========================================= */
-    .services-grid-section { background-color: #ffffff; padding: 80px 0; transition: background-color 0.4s ease; }
-    .product-card { background-color: #ffffff; padding: 15px; border: 1px solid #f0f0f0; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05); text-align: center; transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column; }
-    .product-card:hover { box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12); transform: translateY(-5px); }
-    .product-card .card-img { width: 100%; height: 220px; object-fit: cover; margin-bottom: 20px; }
-    .product-card .card-title { font-size: 18px; font-weight: 800; color: #222222; margin-bottom: 20px; line-height: 1.4; min-height: 50px; transition: color 0.4s ease; }
-    .btn-quote { display: block; width: 100%; background-color: #007BD6; color: #ffffff; font-size: 14px; font-weight: 700; padding: 12px; border: none; margin-bottom: 10px; transition: 0.3s ease; border-radius: 3px; }
-    .btn-quote:hover { background-color: #0d58ba; color: #ffffff; }
-    .btn-explore { display: block; width: 100%; background-color: #ffffff; color: #333333; font-size: 12px; font-weight: 600; text-transform: uppercase; padding: 12px; border: 1px solid #dddddd; transition: 0.3s ease; margin-top: auto; border-radius: 3px;}
-    .btn-explore:hover { background-color: #f9f9f9; color: #000000; border-color: #aaaaaa; }
-    .btn-view-all { display: inline-block; background-color: #000000; color: #ffffff; font-size: 15px; font-weight: 700; text-transform: uppercase; padding: 14px 40px; border-radius: 3px; transition: 0.3s ease; }
-    .btn-view-all:hover { background-color: #333333; color: #ffffff; box-shadow: 0px 5px 15px rgba(0,0,0,0.2); }
+  
+  /* =========================================
+   Products & Services Grid Section
+========================================= */
+.services-grid-section { 
+    background-color: #ffffff; 
+    padding: 80px 0; 
+    transition: background-color 0.4s ease; 
+}
 
+.product-card { 
+    background-color: #ffffff; 
+    padding: 30px; /* Slightly more padding for the larger cards */
+    border: 1px solid #f0f0f0; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05); 
+    text-align: center; 
+    transition: all 0.3s ease; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.product-card:hover { 
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12); 
+    transform: translateY(-5px); 
+}
+
+/* Image height is increased to 400px to match the wider columns */
+.product-card .card-img { 
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
+    margin-bottom: 25px; 
+    border-radius: 4px;
+}
+
+.product-card .card-title { 
+    font-size: 26px; /* Increased slightly for the 3-column layout */
+    font-weight: 800; 
+    color: #222222; 
+    margin-bottom: 25px; 
+    line-height: 1.4; 
+    min-height: 70px; 
+    transition: color 0.4s ease; 
+}
+
+.btn-quote { 
+    display: block; 
+    width: 100%; 
+    background-color: #007BD6; 
+    color: #ffffff; 
+    font-size: 16px; 
+    font-weight: 700; 
+    padding: 18px; 
+    border: none; 
+    margin-bottom: 12px; 
+    transition: 0.3s ease; 
+    border-radius: 3px; 
+}
+
+.btn-quote:hover { 
+    background-color: #0d58ba; 
+    color: #ffffff; 
+}
+
+.btn-explore { 
+    display: block; 
+    width: 100%; 
+    background-color: #ffffff; 
+    color: #333333; 
+    font-size: 14px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    padding: 16px; 
+    border: 1px solid #dddddd; 
+    transition: 0.3s ease; 
+    margin-top: auto; 
+    border-radius: 3px;
+}
+
+.btn-explore:hover { 
+    background-color: #f9f9f9; 
+    color: #000000; 
+    border-color: #aaaaaa; 
+}
+
+.btn-view-all { 
+    display: inline-block; 
+    background-color: #000000; 
+    color: #ffffff; 
+    font-size: 16px; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    padding: 16px 45px; 
+    border-radius: 3px; 
+    transition: 0.3s ease; 
+}
+
+.btn-view-all:hover { 
+    background-color: #333333; 
+    color: #ffffff; 
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2); 
+}
     /* =========================================
        Call To Action (CTA) Section
     ========================================= */
-    .cta-section { background-color: #ffffff; padding: 80px 0; border-top: 1px solid #f4f4f4; transition: background-color 0.4s ease; }
-    .cta-heading { font-size: 36px; font-weight: 800; color: #111111; margin-bottom: 15px; transition: color 0.4s ease;}
+    .cta-section { background-color: #ffffff; padding: 110px 0; /* Increased from 80px 0 */ border-top: 1px solid #f4f4f4; transition: background-color 0.4s ease; }
+    .cta-heading { font-size: 48px; /* Increased from 36px */ font-weight: 800; color: #111111; margin-bottom: 25px; transition: color 0.4s ease;}
     .cta-highlight { background: linear-gradient(90deg, #00c6ff 0%, #8a2be2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .cta-subtext { font-size: 16px; color: #666666; margin-bottom: 40px; transition: color 0.4s ease;}
-    .cta-buttons { display: flex; justify-content: center; gap: 20px; }
-    .btn-cta-primary { background-color: #26c6da; color: #ffffff; font-size: 15px; font-weight: 600; padding: 12px 35px; border-radius: 6px; transition: all 0.3s ease; border: 1px solid #26c6da; }
+    .cta-subtext { font-size: 22px; /* Increased from 16px */ color: #666666; margin-bottom: 50px; transition: color 0.4s ease;}
+    .cta-buttons { display: flex; justify-content: center; gap: 25px; }
+    .btn-cta-primary { background-color: #26c6da; color: #ffffff; font-size: 18px; /* Increased from 15px */ font-weight: 600; padding: 16px 45px; /* Increased from 12px 35px */ border-radius: 6px; transition: all 0.3s ease; border: 1px solid #26c6da; }
     .btn-cta-primary:hover { background-color: #1eacc0; color: #ffffff; box-shadow: 0px 4px 15px rgba(38, 198, 218, 0.4); }
-    .btn-cta-outline { background-color: transparent; color: #111111; font-size: 15px; font-weight: 600; padding: 12px 35px; border-radius: 6px; transition: all 0.3s ease; border: 1px solid #333333; }
+    .btn-cta-outline { background-color: transparent; color: #111111; font-size: 18px; /* Increased from 15px */ font-weight: 600; padding: 16px 45px; /* Increased from 12px 35px */ border-radius: 6px; transition: all 0.3s ease; border: 1px solid #333333; }
     .btn-cta-outline:hover { background-color: #111111; color: #ffffff; }
 
-    /* =========================================
+     /* =========================================
        Footer Section
     ========================================= */
     .footer-section { background-color: #ffffff; padding: 60px 0 0 0; color: #555555; font-size: 15px; border-top: 1px solid #eaeaea; transition: background-color 0.4s ease; }
@@ -169,7 +257,6 @@
     .scroll-btn { background-color: #106eea; opacity: 0; visibility: hidden; transition: 0.4s ease; }
     .scroll-btn.show { opacity: 1; visibility: visible; }
     .scroll-btn:hover { background-color: #0d58ba; }
-
     /* =========================================
        Dark Mode Overrides
     ========================================= */
@@ -224,4 +311,6 @@
       .secure-section { justify-content: center; }
       .hero-right-pane { height: 50vh; }
       .main-nav { display: none; }
+      .hero-heading { font-size: 52px; } /* Scaled up for mobile */
+      .section-title { font-size: 38px; } /* Scaled up for mobile */
     }
