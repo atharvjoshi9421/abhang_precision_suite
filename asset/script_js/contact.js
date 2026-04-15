@@ -61,3 +61,15 @@
 
 
     }); // <-- This closing tag is essential for jQuery
+
+        // 4. Mobile Menu Toggle Logic
+$('.mobile-toggle').click(function() {
+  $('.main-nav').toggleClass('active');
+  
+  // Swap the BoxIcon between a Menu (hamburger) and an X (close)
+  if ($('.main-nav').hasClass('active')) {
+    $('#mobile-icon').removeClass('bx-menu').addClass('bx-x');
+  } else {
+    $('#mobile-icon').removeClass('bx-x').addClass('bx-menu');
+  }
+});

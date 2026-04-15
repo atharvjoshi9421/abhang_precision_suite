@@ -13,27 +13,32 @@
 </head>
 <body>
 
-  <header id="header">
-    <div class="header-container">
-      <div class="logo" data-aos="fade-down">
-        <a href="index.html" style="text-decoration: none;">
-          <h1 class="logo-title">ABHANG <span>PRECISION</span></h1>
-        </a>
-      </div>
-      <nav class="main-nav" data-aos="fade-down" data-aos-delay="100">
-        <ul>
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About Us</a></li>
-          <li><a href="product.html" class="nav-link">Products</a></li>
-          <li><a href="services.html" class="nav-link">Services</a></li>
-          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div class="nav-button-wrapper" data-aos="fade-down" data-aos-delay="200">
-        <a href="quote.html" class="nav-btn-quote">Get Quote</a>
-      </div>
+ <header id="header">
+  <div class="header-container">
+    <div class="logo" data-aos="fade-down">
+      <a href="index.html">
+        <h1 class="logo-title">ABHANG <span>PRECISION</span></h1>
+      </a>
     </div>
-  </header>
+
+    <div class="mobile-toggle" data-aos="fade-down">
+      <i class='bx bx-menu' id="mobile-icon"></i>
+    </div>
+
+    <nav class="main-nav" data-aos="fade-down" data-aos-delay="100">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="product.html" class="nav-link">Products</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="nav-button-wrapper" data-aos="fade-down" data-aos-delay="200">
+      <a href="quote.html" class="nav-btn-quote">Get Quote</a>
+    </div>
+  </div>
+</header>
 
     <div class="container quote-container">
         <div class="breadcrumb">
@@ -49,41 +54,36 @@
         <p class="subtitle">Tell us about your requirements and we'll provide a competitive quote.</p>
 
         <div class="form-card">
-            <form id="quoteForm">
-                
-                <div class="input-group">
-                    <input type="text" id="fullName" placeholder="Full Name *" required>
-                </div>
+         <form id="exactContactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="7db7287d-0fe4-4b90-a349-0f2cd7479b40">
+            
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+            
+            <input type="hidden" name="subject" value="New Contact Form Submission from Abhang Precision">
 
-                <div class="input-group">
-                    <input type="email" id="email" placeholder="Email *" required>
-                </div>
-
-                <div class="input-group">
-                    <input type="tel" id="phone" placeholder="Phone *" required>
-                </div>
-
-                <div class="input-group">
-                    <select id="service">
-                        <option value="" disabled selected>Select a product/service (optional)</option>
-                        <option value="web-design">Web Design</option>
-                        <option value="seo">SEO Optimization</option>
-                        <option value="marketing">Digital Marketing</option>
-                    </select>
-                </div>
-
-                <div class="input-group">
-                    <textarea id="requirements" placeholder="Describe your requirements * (min 10 characters)" minlength="10" rows="5" required></textarea>
-                </div>
-
-                <div class="captcha-row">
-                    <div class="captcha-box" id="captchaEquation">9 + 3 = ?</div>
-                    <input type="number" id="captchaInput" placeholder="Answer" required>
-                    <button type="button" id="newCaptchaBtn" class="new-link">New</button>
-                </div>
-
-                <button type="submit" class="submit-btn">Submit Quote Request</button>
-            </form>
+            <div class="form-group">
+              <input type="text" name="name" class="light-input" placeholder="Full Name *" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="light-input" placeholder="Email *" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" name="phone" class="light-input" placeholder="Phone *" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" class="light-input" rows="4" placeholder="Your Message * (min 10 characters)" minlength="10" required></textarea>
+            </div>
+            
+            <div class="captcha-row d-flex align-items-center mb-4">
+              <div class="captcha-equation">
+                <span id="val1">4</span> + <span id="val2">14</span> = ?
+              </div>
+              <input type="number" id="captchaInput" class="light-input captcha-answer mx-3" placeholder="Answer" required>
+              <button type="button" id="refreshCaptcha" class="btn-refresh-text">New</button>
+            </div>
+            
+            <button type="submit" class="btn-brand-submit">Send Message</button>
+          </form>
         </div>
     </div>
     

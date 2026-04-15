@@ -96,108 +96,88 @@
         margin-bottom: 32px;
     }
 
-    /* Form Styles */
-    .form-card {
-        border: 1px solid #e2e8f0;
-        border-radius: 12px;
-        padding: 32px;
-        background-color: #ffffff;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    }
 
-    .input-group {
-        margin-bottom: 20px;
-    }
+/* Stylish underline for the heading */
+.form-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #106eea;
+  border-radius: 2px;
+}
 
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    select,
-    textarea,
-    input[type="number"] {
-        width: 100%;
-        padding: 14px 16px;
-        border: 1px solid #cbd5e1;
-        border-radius: 8px;
-        background-color: #f8fafc;
-        color: #0f172a;
-        font-size: 15px;
-        transition: border-color 0.2s, box-shadow 0.2s;
-        outline: none;
-    }
+/* Form Inputs */
+.light-input {
+  width: 100%;
+  background-color: #fcfcfc;
+  border: 1px solid #e2e8f0;
+  color: #333333;
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
 
-    input:focus,
-    select:focus,
-    textarea:focus {
-        border-color: #00b4d8;
-        box-shadow: 0 0 0 3px rgba(0, 180, 216, 0.1);
-    }
+.light-input::placeholder { color: #94a3b8; }
 
-    textarea {
-        resize: vertical;
-    }
+.light-input:focus {
+  background-color: #ffffff;
+  border-color: #106eea; 
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(16, 110, 234, 0.15); /* Soft blue glow on focus */
+}
 
-    /* Custom Select Dropdown Arrow */
-    select {
-        appearance: none;
-        background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2364748b%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
-        background-repeat: no-repeat;
-        background-position: right 16px top 50%;
-        background-size: 12px auto;
-    }
+/* Captcha UI */
+.captcha-equation {
+  background-color: #f1f5f9;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  border: 1px solid #e2e8f0;
+}
 
-    /* Captcha Row */
-    .captcha-row {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 24px;
-    }
+.captcha-answer { width: 120px; }
 
-    .captcha-box {
-        background-color: #f1f5f9;
-        border: 1px solid #cbd5e1;
-        padding: 12px 20px;
-        border-radius: 8px;
-        font-weight: 600;
-        color: #0f172a;
-        user-select: none;
-    }
+.btn-refresh-text {
+  background: transparent; 
+  border: none; 
+  color: #106eea;
+  font-size: 14px; 
+  font-weight: 600; 
+  cursor: pointer; 
+  transition: 0.3s;
+}
 
-    #captchaInput {
-        max-width: 120px;
-    }
+.btn-refresh-text:hover { 
+  color: #0d58ba; 
+  text-decoration: underline; 
+}
 
-    .new-link {
-        background: none;
-        border: none;
-        color: #64748b;
-        text-decoration: underline;
-        cursor: pointer;
-        font-size: 14px;
-    }
+/* Primary Brand Submit Button */
+.btn-brand-submit {
+  width: 100%;
+  background-color: #106eea; 
+  color: #ffffff;
+  border: none;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(16, 110, 234, 0.2);
+}
 
-    .new-link:hover {
-        color: #0f172a;
-    }
-
-    /* Submit Button */
-    .submit-btn {
-        width: 100%;
-        padding: 16px;
-        background-color: #2b7a9e; 
-        color: white;
-        border: none;
-        border-radius: 8px;
-        font-size: 16px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: background-color 0.2s;
-    }
-
-    .submit-btn:hover {
-        background-color: #21617e;
-    }
+.btn-brand-submit:hover { 
+  background-color: #0d58ba; 
+  box-shadow: 0 6px 15px rgba(16, 110, 234, 0.3);
+  transform: translateY(-2px); /* Slight lift effect */
+}
 
 /* =========================================
    NEW Dark Footer Section Styles
@@ -456,3 +436,73 @@
     .scroll-btn.show { opacity: 1; visibility: visible; }
     .scroll-btn:hover { background-color: #0d58ba; }
 
+    /* =========================================
+   Responsive Navbar (Tablet & Mobile)
+   ========================================= */
+
+/* Hide mobile toggle on Desktop */
+.mobile-toggle {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Tablet and Mobile Views */
+@media (max-width: 991px) {
+  .header-container {
+    padding: 0 20px;
+  }
+  
+  /* Show hamburger menu */
+  .mobile-toggle {
+    display: block;
+    order: 2; /* Pushes it to the right side */
+  }
+
+  /* Hide the get quote button to save space on mobile (optional) */
+  .nav-button-wrapper {
+    display: none; 
+  }
+
+  /* Restructure the navigation into a dropdown */
+  .main-nav {
+    position: absolute;
+    top: 80px; /* Right below the header */
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default on mobile */
+    border-top: 1px solid #f1f1f1;
+    padding: 20px 0;
+  }
+
+  /* Class added by JavaScript to show the menu */
+  .main-nav.active {
+    display: flex; 
+  }
+
+  /* Stack navigation links vertically */
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-nav ul li {
+    margin: 12px 0;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  /* Adjust active state for mobile (removes bottom border) */
+  .nav-link.active {
+    border-bottom: none;
+    color: #106eea;
+    font-weight: 700;
+  }
+}
