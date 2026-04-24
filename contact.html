@@ -8,24 +8,20 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel='stylesheet'>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css" rel="stylesheet">
-  
   <link rel="stylesheet" href="asset/style_css/contact.css">
-  
 </head>
 <body>
 
  <header id="header">
   <div class="header-container">
     <div class="logo" data-aos="fade-down">
-      <a href="index.html">
-        <h1 class="logo-title">ABHANG <span>PRECISION</span></h1>
+      <a href="index.html" class="logo-link">
+        <img src="asset/images/logo.png" alt="Abhang Precision Logo" class="logo-img">
       </a>
     </div>
-
     <div class="mobile-toggle" data-aos="fade-down">
       <i class='bx bx-menu' id="mobile-icon"></i>
     </div>
-
     <nav class="main-nav" data-aos="fade-down" data-aos-delay="100">
       <ul>
         <li><a href="index.html" class="nav-link">Home</a></li>
@@ -41,27 +37,18 @@
   </div>
 </header>
 
-  <section id="contact-us" class="contact-light-section">
+<section id="contact-us" class="contact-light-section">
   <div class="container">
-    
     <div class="section-header text-center mb-5" data-aos="fade-up">
       <h2 style="font-size: 36px; font-weight: 700; color: #1a1a1a;">Get In Touch</h2>
       <p style="color: #666666;">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
     </div>
-
     <div class="row align-items-stretch">
-      
       <div class="col-lg-6 mb-4 mb-lg-0" data-aos="zoom-in" data-aos-duration="1000">
         <div class="light-card form-card h-100">
           <h3 class="form-heading">Send us a message</h3>
           
-         <form id="exactContactForm" action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="7db7287d-0fe4-4b90-a349-0f2cd7479b40">
-            
-            <input type="hidden" name="redirect" value="https://web3forms.com/success">
-            
-            <input type="hidden" name="subject" value="New Contact Form Submission from Abhang Precision">
-
+          <form id="exactContactForm">
             <div class="form-group">
               <input type="text" name="name" class="light-input" placeholder="Full Name *" required>
             </div>
@@ -77,19 +64,18 @@
             
             <div class="captcha-row d-flex align-items-center mb-4">
               <div class="captcha-equation">
-                <span id="val1">4</span> + <span id="val2">14</span> = ?
+                <span id="val1"></span> + <span id="val2"></span> = ?
               </div>
               <input type="number" id="captchaInput" class="light-input captcha-answer mx-3" placeholder="Answer" required>
               <button type="button" id="refreshCaptcha" class="btn-refresh-text">New</button>
             </div>
             
-            <button type="submit" class="btn-brand-submit">Send Message</button>
+            <button type="submit" class="btn-brand-submit" id="submitBtn">Send Message</button>
           </form>
         </div>
       </div>
-
+      
       <div class="col-lg-6 d-flex flex-column" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
-        
         <div class="light-card info-card mb-4">
           <ul class="light-info-list">
             <li>
@@ -122,7 +108,6 @@
             </li>
           </ul>
         </div>
-
         <div class="light-card map-card flex-grow-1 p-0">
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.04360434007!2d73.7805654!3d18.5246036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1689000000000!5m2!1sen!2sin" 
@@ -133,21 +118,22 @@
             loading="lazy">
           </iframe>
         </div>
-
       </div>
-
     </div>
   </div>
 </section>
 
-    
 <footer id="footer" class="footer-dark-section">
 
     <div class="container footer-content">
       <div class="row">
         
         <div class="col-lg-3 col-md-6 mb-4 pr-lg-3" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="footer-logo-text">Abhang <span>Precision</span></h3>
+          <div style="margin-bottom: 20px;">
+            <a href="index.html" class="logo-link">
+              <img src="asset/images/footer logo.png" alt="Abhang Precision Logo" class="logo-img">
+            </a>
+          </div>
           <p class="footer-desc">
             Your trusted partner for laser cutting, wirecut EDM, and precision manufacturing in Western India.
           </p>
@@ -158,7 +144,7 @@
         </div>
 
         <div class="col-lg-2 col-md-6 mb-4 footer-links" data-aos="fade-up" data-aos-delay="200">
-          <h4 class="footer-heading">Company</h4>
+          <h4 class="footer-heading">Navigation</h4>
           <ul>
             <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
             <li><i class="bx bx-chevron-right"></i> <a href="about.html">About Us</a></li>
@@ -199,11 +185,11 @@
           <h4 class="footer-heading">Get in Touch</h4>
           <div class="contact-item">
             <i class="bx bx-map"></i>
-            <p>Pune, Maharashtra<br>411001, India</p>
+            <p>30/8/9, Saraswati Navale Ind. Estate Shed No.24,<br>Near Prabhat Press, Dhayari Gaon,<br>Pune - 411041</p>
           </div>
           <div class="contact-item">
             <i class="bx bx-phone"></i>
-            <p><a href="tel:+919876543210">+91 9876543210</a></p>
+            <p><a href="tel:+91 88302 38506">+91 88302 38506</a></p>
           </div>
           <div class="contact-item">
             <i class="bx bx-envelope"></i>
@@ -214,33 +200,27 @@
       </div>
     </div>
 
-    <div class="footer-bottom-dark">
+ <div class="footer-bottom-dark">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
-            <div class="copyright">
-              &copy; 2026 <strong>Abhang Wirecut Services</strong>. All Rights Reserved.
-            </div>
-          </div>
-          <div class="col-md-6 text-center text-md-right">
-            <div class="footer-legal-links">
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms & Conditions</a>
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="copyright" style="line-height: 1.8;">
+              &copy; 2026  Abhang Wirecut Services. All Rights Reserved.<br>
+              Developed By <a href="https://dwi4u.com/" target="_blank" rel="noopener noreferrer" style="color: #aaaaaa; text-decoration: none;">DW Innovation Pvt. Ltd.</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </footer>
-
-
-  <div class="floating-container">
     
+</footer>
+
+<div class="floating-container">
     <button id="scrollTopBtn" class="float-btn scroll-btn" title="Scroll to Top">
       <i class='bx bx-up-arrow-alt'></i>
     </button>
-
-    <a href="https://wa.me/919876543210" target="_blank" class="float-btn whatsapp-btn" title="Chat on WhatsApp">
+   
+     <a href="https://wa.me/8830238506" target="_blank" class="float-btn whatsapp-btn" title="Chat on WhatsApp">
       <i class='bx bxl-whatsapp'></i>
     </a>
   </div>
