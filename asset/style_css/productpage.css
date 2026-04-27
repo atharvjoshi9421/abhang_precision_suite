@@ -87,7 +87,7 @@ body {
 }
 
 .container {
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
 /* Main Product Details */
@@ -99,6 +99,7 @@ body {
     border-radius: 20px;
     font-size: 1rem; /* Increased font size */
     display: inline-block;
+    margin-top: 25px;
     margin-bottom: 15px;
     font-weight: 600;
 }
@@ -296,7 +297,7 @@ body {
 
 /* Main Footer Content */
 .footer-content {
-    padding: 70px 15px 40px 15px;
+    padding: 70px 15px 15px 15px;
 }
 
 .footer-logo-text {
@@ -464,14 +465,14 @@ body {
     background-color: #ffffff; 
     color: #4b5563; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 40px 0 0 0; /* Changed the bottom 80px to 0 */
+    padding: 0px 0 0 0; /* Changed the bottom 80px to 0 */
     font-size: 18px; 
 }
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .footer-content {
-        padding: 50px 15px 20px 15px;
+        padding: 50px 15px 5px 15px;
     }
     .footer-legal-links {
         margin-top: 10px;
